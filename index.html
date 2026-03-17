@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -18,28 +18,76 @@
       color: #0056b3;
       text-align: center;
     }
-    div {
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .div {
       background-color: #ffffff;
       border: 1px solid #cccccc;
       padding: 15px;
       margin-bottom: 20px;
       border-radius: 8px;
+      font-size: 20px;
     }
 
-    img {
+    .imagem {
       max-width: 100%;
       border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .legenda_imagem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .zap {
+      display: inline;
+      align-items: center;
+      justify-content: center;
+    }
+    .img_zap {
+      width: 35px;
+      border-radius: 8px;
+      align-items: center;
+      justify-content: center;
+    }
+    .email {
+      display: inline;
+      justify-content: center;
+      align-items: center;
+    }
+    .img_email {
+      width: 35px;
+      border-radius: 8px;
+      align-items: center;
+      justify-content: center;
     }
   </style>
   <body>
     <h1>Comunidade dos desenvolvedores</h1>
 
     <p>
-      Bem vindos a página oficial do nosso <strong>grupo de estudos</strong>.
+      Bem vindos a página oficial do nosso <strong> grupo de estudos </strong>.
       Aqui compartilhamos conhecimento e código!
     </p>
 
-    <div>
+    <div class="div">
       <h2>Sobre nós</h2>
       <p>
         Nós começamos a programar juntos e agora nos reunimos toda semana. É
@@ -49,12 +97,30 @@
       <p>Nossos encontros acontecem no laboratório principal.</p>
     </div>
 
-    <div>
-      <h2>Nossa foto</h2>
-      <img
-        src="https://zenvia.com/wp-content/uploads/2022/08/Ferramentas-para-gestao-de-vendas-otimize-os-processos-da-sua-equipe-e-melhore-sua-rotina.jpg"
-        alt="Imagem representativa da comunidade"
-      />
+    <div class="div">
+      <h2 class="legenda_imagem">Nossa foto</h2>
+      <div class="imagem">
+        <img
+          src="https://zenvia.com/wp-content/uploads/2022/08/Ferramentas-para-gestao-de-vendas-otimize-os-processos-da-sua-equipe-e-melhore-sua-rotina.jpg"
+          alt="Imagem representativa da comunidade"
+        />
+      </div>
     </div>
+    <footer class="div">
+      <h1 class="contato">Nossos contatos</h1>
+      <img
+        class="img_zap"
+        src="https://img.freepik.com/psd-gratuitas/icone-do-whatsapp-isolado-ilustracao-de-renderizacao-3d_47987-9785.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="Icone do whatsapp"
+      />
+      <section class="zap">84912345678</section>
+      <img
+        class="img_email"
+        src="https://images.vexels.com/media/users/3/140131/isolated/preview/cc86a9f4ca65a140b2edadf3f87f2c17-design-do-icone-do-circulo-de-e-mail.png"
+        alt="Icone do email"
+      />
+      <section class="email">gruposenac@edum.rn.senac.br</section>
+      <section></section>
+    </footer>
   </body>
 </html>
